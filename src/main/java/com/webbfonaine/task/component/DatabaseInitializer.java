@@ -46,5 +46,19 @@ public class DatabaseInitializer implements CommandLineRunner {
         task2.setCompleted(false);
         task2.setAssignedTo(userB);
         taskRepository.save(task2);
+
+        Task task3 = new Task();
+        task3.setTitle("Adding spring security to the project");
+        task3.setDescription("The homepage layout breaks on mobile devices");
+        task3.setCompleted(false);
+        task3.setAssignedTo(userA);
+        taskRepository.save(task3);
+
+        Task task4 = new Task();
+        task4.setTitle("Designing the front for view with thymeleaf");
+        task4.setDescription("The homepage layout breaks on mobile devices");
+        task4.setCompleted(false);
+        task4.setAssignedTo(userA);
+        taskRepository.save(task4);
     }
 }
